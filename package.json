@@ -1,0 +1,25 @@
+{
+  "name":"hardhat fund me",
+  "author":"Muhammad Hashim",
+  "version":"1.0.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.5.1",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat-deploy": "^0.11.20",
+    "hardhat-gas-reporter": "^1.0.9"
+  },
+  "scripts":{
+    "test":"npx hardhat test",
+    "test:staging":"npx hardhat test --network goerli",
+    "lint":"npx solhint 'contracts/*.sol'",
+    "lint:fix":"npx solhint 'contracts/*.sol' --fix",
+    "coverage":"npx hardhat coverage"
+  }
+}
